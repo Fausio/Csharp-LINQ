@@ -10,25 +10,26 @@ namespace LINQ.Models
     {
         public static List<string> Names = new List<string>() { "Fausio", "Luis", "Matsinhe", "João", "Ilda" };
 
-        public IEnumerable<string> FluentType() =>
+        public IEnumerable<string> FluentType =>
         Names.Where(x => x.Contains("i"))
              .OrderBy(x => x.Length)
              .Select(x => x.ToUpper());
 
-        public IEnumerable<string> QueryType() =>
+        public IEnumerable<string> QueryType =>
         from x in Names
         where x.Contains("i")
         orderby x.Length
         select x.ToUpper();
 
-        public int FluentType_And_QueryType() =>
+        public string FluentType_And_QueryType =>
         (
             from x in Names
             where x.Contains("i")
             orderby x.Length
             select x.ToUpper()
         )
-        .Count();
+        .Count()
+        .ToString();
 
 
     }

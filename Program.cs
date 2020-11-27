@@ -10,12 +10,11 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
- 
-            IEnumerable<string> result = Start.FistQueryResult();
+                Syntax clss = new Syntax(); 
                 //result = result.Select(x => x.ToLower());
 
                 // string.Join => join the list 
-              Console.WriteLine(string.Join(", ",result ));  
+              Console.WriteLine(string.Join(", ",clss.FluentType));  
              
        }
     }
