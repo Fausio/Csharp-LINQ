@@ -1,4 +1,4 @@
-﻿using System; 
+﻿using System;
 using LINQ.Models;
 using System.Linq;
 using System.Collections;
@@ -10,16 +10,18 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-                Syntax clss = new Syntax(); 
-                //result = result.Select(x => x.ToLower());
+            //Syntax clss = new Syntax(); 
+            //result = result.Select(x => x.ToLower());
 
-                // string.Join => join the list 
-              Console.WriteLine(string.Join(", ",clss.FluentType));  
-             
-       }
+
+            EscalarLastSingleFirst clss = new EscalarLastSingleFirst(); 
+            // string.Join => join the list 
+            Console.WriteLine(string.Join(", ",clss.GetSingle()));
+
+        }
     }
 
 
-     
+
 }
 

@@ -16,13 +16,13 @@ namespace LINQ.Models
         numbers.FirstOrDefault(); // 0
 
         public int GetSingle() =>
-        numbers.SingleOrDefault(s => s / 2 == 1); // 2
+        numbers.SingleOrDefault(s => s > 8); // 2
 
         public int GetLast() =>
         numbers.Last(last => last == 2); // 2
 
         public int GetElemetByIndex() =>
-        Enumerable.Range(0, 5).ElementAt(3); // 2
+        Enumerable.Range(0, 5).ElementAt(3); // 3
 
     }
 }
