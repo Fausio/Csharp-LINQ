@@ -14,9 +14,12 @@ namespace LINQ
             //result = result.Select(x => x.ToLower());
 
 
-            EscalarLastSingleFirst clss = new EscalarLastSingleFirst(); 
+            //EscalarLastSingleFirst clss = new EscalarLastSingleFirst(); 
+
+            AnyAllAndAVG clss = new AnyAllAndAVG();
+
             // string.Join => join the list 
-            Console.WriteLine(string.Join(", ",clss.GetSingle()));
+            Console.WriteLine(string.Join(", ", clss.GetAllResult()));
 
         }
     }
