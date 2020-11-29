@@ -10,7 +10,7 @@ namespace LINQ.Models
     {
         public int[] empty = Enumerable.Empty<int>().ToArray();
         public int[] numbers = Enumerable.Range(0, 10).ToArray();
-        public static[] Names = { "Fausio", "Luis", "Matsinhe", "João", "Ilda" };
+        public string[] Names = { "Fausio", "Luis", "Matsinhe", "João", "Ilda" };
 
         public int GetFist() =>
         numbers.FirstOrDefault(); // 0
