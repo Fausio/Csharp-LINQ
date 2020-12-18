@@ -17,10 +17,10 @@ namespace LINQ.Models
             manipulator.Write(filter);
         }
 
-/*         public void FilteringTakeUntilWhile()
+          public void FilteringTakeUntilWhile()
         {
             IEnumerable<int> filter = Mymodels.MyData.TakeWhile(m => m.Number > 5).Select(m => m.Number);
             manipulator.Write(filter);
-        } */
+      
     }
 }
