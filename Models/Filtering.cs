@@ -19,8 +19,8 @@ namespace LINQ.Models
 
           public void FilteringTakeUntilWhile()
         {
-            IEnumerable<int> filter = Mymodels.MyData.TakeWhile(m => m.Number > 5).Select(m => m.Number);
+            IEnumerable<int> filter = Mymodels.MyData.TakeWhile(m => m.Number  < 5).Select(m => m.Number); // diferente from where is the colection start with non true condition the code isn't run
             manipulator.Write(filter);
-      
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace LINQ.Models
         {
             foreach (int item in Enumerable.Range(0, 10)) // 0 - 9
             {
-                MyData.Add(new ObjectClass() { Number = item });
+                MyData.Add(new ObjectClass() { Number = item, Text =string.Format("Texto {0}",item +3) });
             }
         }
     }

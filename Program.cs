@@ -10,9 +10,8 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-             var a = Enumerable.Range(10,8);
-            System.Console.WriteLine(string.Join(", ",a));
-
+            Conversions conversions   = new Conversions();
+           conversions._Conversions();
         }
     }
 }
