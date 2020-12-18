@@ -10,11 +10,11 @@ namespace LINQ.Models
     {
         public List<ObjectClass> MyData = new List<ObjectClass>();
 
-        public void populateDate()
+        public ObjectClassPopulated()
         {
-            foreach (int item in Enumerable.Range(0,10)) // 0 - 9
+            foreach (int item in Enumerable.Range(0, 10)) // 0 - 9
             {
-              MyData.Add(new ObjectClass(){ Number = item});
+                MyData.Add(new ObjectClass() { Number = item });
             }
         }
     }
