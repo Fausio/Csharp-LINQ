@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 namespace LINQ.Models
 {
-    public class Filtering
+    public class ObjectClassPopulated
     {
         public List<ObjectClass> MyData = new List<ObjectClass>();
 
         public void populateDate()
         {
-            foreach (int item in Enumerable.Range(0,10))
+            foreach (int item in Enumerable.Range(0,10)) // 0 - 9
             {
               MyData.Add(new ObjectClass(){ Number = item});
             }
