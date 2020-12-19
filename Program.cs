@@ -10,9 +10,9 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            JoinGroup method = new JoinGroup();
+            Zip method = new Zip();
 
-            method.JoinMethot();
+            method.ziper();
         }
     }
 }
