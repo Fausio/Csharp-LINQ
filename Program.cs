@@ -10,8 +10,9 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            Conversions conversions   = new Conversions();
-           conversions._Conversions();
+            JoinGroup method = new JoinGroup();
+
+            method.JoinMethot();
         }
     }
 }
