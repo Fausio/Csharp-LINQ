@@ -10,9 +10,9 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            Zip method = new Zip();
+            Ordering method = new Ordering();
 
-            method.ziper();
+            method.Order();
         }
     }
 }
